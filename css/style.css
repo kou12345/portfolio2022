@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+
+h2 {
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+/* 
+main-visual
+*/
+#main-visual {
+  background: gray;
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-visual h1 {
+  font-size: 4em;
+  background: beige;
+  text-align: center;
+}
+
+#main-visual p {
+  font-size: 2em;
+  background: forestgreen;
+  text-align: center;
+}
+
+/* menu */
+#main-visual #menu {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#main-visual #menu li {
+  width: 23%;
+  list-style: none;
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+#main-visual #menu a {
+  text-decoration: none;
+}
+
+.user-icon::before {
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}
+
+.skills-icon::before {
+  content: "\f121";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}
+
+.contact-icon::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}
+
+/* 
+profile
+*/
+#profile {
+  margin-top: 3%;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#profile h2 {
+  background: antiquewhite;
+  text-align: center;
+  width: 100%;
+}
+
+#profile #name {
+  background: darkcyan;
+  width: 70%;
+  text-align: center;
+  margin-top: 1%;
+}
+
+#profile #overview {
+  background: gold;
+  width: 70%;
+  text-align: center;
+  margin-top: 1%;
+}
+
+#profile #hobby {
+  background: darkcyan;
+  width: 70%;
+  text-align: center;
+  margin-top: 1%;
+}
+
+/*
+skills
+*/
+#skills {
+  margin-top: 3%;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#skills h2 {
+  background: antiquewhite;
+  text-align: center;
+  width: 100%;
+}
+
+article {
+  background: silver;
+  width: 70%;
+  margin-top: 3%;
+}
+
+/* 
+works
+*/
+#works {
+  margin-top: 3%;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#works h2 {
+  width: 100%;
+  background: antiquewhite;
+  text-align: center;
+}
+
+/* 
+contact
+*/
+#contact {
+  margin-top: 3%;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#contact h2 {
+  width: 100%;
+  background: antiquewhite;
+  text-align: center;
+}
+
+#contact #email {
+  background: forestgreen;
+  text-align: center;
+  width: 30%;
+  margin-top: 1%;
+  font-size: 1.5em;
+}
