@@ -15,21 +15,21 @@
         <!-- main-visual -->
         <div id="main-visual">
             <h1>Koichiro Hira's Portfolio</h1>
-            <p>hogehoge</p>
+            <p>backend engineer</p>
 
             <!-- menu -->
             <ul id="menu">
                 <li>
-                    <a href="#profile" class="user-icon">Profile</a>
+                    <a href="#profile" class="user-icon change-color">Profile</a>
                 </li>
                 <li>
-                    <a href="#skills" class="skills-icon">Skills</a>
+                    <a href="#skills" class="skills-icon change-color">Skills</a>
                 </li>
                 <li>
-                    <a href="#works">Works</a>
+                    <a href="#works" class="change-color">Works</a>
                 </li>
                 <li>
-                    <a href="#contact" class="contact-icon">Contact</a>
+                    <a href="#contact" class="contact-icon change-color">Contact</a>
                 </li>
             </ul>
         </div>
@@ -37,72 +37,116 @@
         <!-- profile -->
         <section id="profile">
 
-            <h2>Profile</h2>
+            <h1 class="user-icon">Profile</h1>
 
-            <!-- 名前 -->
-            <p id="name">名前</p>
 
             <!-- 概要 -->
-            <p id="overview">概要概要概要</p>
+            <p id="overview">
+                はじめまして、平幸一郎と申します<br>
+                主にPython, Djangoを使っています<br>
+                最近はGoを勉強しています
+            </p>
 
-            <!-- 趣味 -->
-            <p id="hobby">趣味</p>
-
+            <br>
+            <!-- <h3>よく使う技術・ソフトウェア</h3>
             <ul>
-                <li>
-                    <p>趣味</p>
-                    <p>説明</p>
+                <li class="img-hoge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
                 </li>
-                <li>
-                    <p>趣味</p>
-                    <p>説明</p>
+                <li class="img-hoge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
                 </li>
-                <li>
-                    <p>趣味</p>
-                    <p>説明</p>
+                <li class="img-hoge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" />
                 </li>
-            </ul>
+                <li class="img-hoge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                </li>
+                <li class="img-hoge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                </li>
+                <li class="img-hoge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" />
+                </li>
+                <li class="img-hoge">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                </li>
+            </ul> -->
         </section>
 
         <!-- skills -->
         <section id="skills">
 
-            <h2>Skills</h2>
+            <h1 class="skills-icon">Skills</h1>
 
-            <article>
-                <h3>python</h3>
-                <p>icon</p>
-                <p>☆☆☆☆☆</p>
-                <p>説明</p>
-            </article>
+            <div id="skills-item">
 
-            <article>
-                <h3>python</h3>
-                <p>☆☆☆☆☆</p>
-                <p>説明</p>
-            </article>
+                <article>
+                    <div class="img-hoge">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                    </div>
+                    <h2>Python</h2>
+                    <p>★★☆☆☆</p>
+                    <p>Webアプリのバックエンドで使っています</p>
+                </article>
+
+                <article>
+                    <h2>Django</h2>
+                    <p>★★☆☆☆</p>
+                    <p>説明</p>
+                </article>
+
+                <article>
+                    <h2>Go</h2>
+                    <p>★☆☆☆☆</p>
+                    <p>説明</p>
+                </article>
+
+                <article>
+                    <h2>DB設計</h2>
+                    <p>★☆☆☆☆</p>
+                    <p>
+                        まだまだ未熟です<br>
+                        A5M2を使って、ER図を書いてます
+                    </p>
+                </article>
+
+                <article>
+                    <h2>Docker</h2>
+                    <p>★★☆☆☆</p>
+                    <p>
+                        開発環境を用意する際によく使ってます<br>
+                    </p>
+                </article>
+
+                <article>
+                    <h2>GitHub</h2>
+                    <p>★★★☆☆</p>
+                    <p>基本的な事はできます（add, commit, push）</p>
+                </article>
+            </div>
 
         </section>
 
         <!-- works -->
         <section id="works">
 
-            <h2>Works</h2>
+            <h1>Works</h1>
 
             <article>
-                <h3>title</h3>
+                <h2>title</h2>
                 <p>説明</p>
                 <a href="#">詳細へ</a>
             </article>
 
             <article>
-                <h3>title</h3>
+                <h2>title</h2>
                 <p>説明</p>
                 <a href="#">詳細へ</a>
             </article>
 
             <article>
-                <h3>title</h3>
+                <h2>title</h2>
                 <p>説明</p>
                 <a href="#">詳細へ</a>
             </article>
@@ -112,7 +156,7 @@
         <!-- contact -->
         <section id="contact">
 
-            <h2>Contact</h2>
+            <h1 class="contact-icon">Contact</h1>
 
             <!-- email -->
             <p id="email">hi.0412.ko.2002@gmail.com</p>
