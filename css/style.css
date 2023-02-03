@@ -4,6 +4,20 @@
 h1 {
   font-size: 2.5em;
   font-weight: lighter;
+
+  color: #3b3b3b;
+}
+
+p {
+  color: #3b3b3b;
+}
+
+hr {
+  background-color: #9ed5c5;
+  height: 1px;
+  border: none;
+  width: 50%;
+  margin: auto;
 }
 
 /* 
@@ -59,25 +73,43 @@ a.change-color:hover {
   background-color: rgba(150, 146, 146, 0.1);
 }
 
-.user-icon::before {
+.top-heading {
+  text-align: center;
+  width: 100%;
+
+  text-shadow: 3px 1px 0px #9ed5c5;
+}
+
+#profile .top-heading::before {
   content: "\f007";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 10px;
 }
 
-.skills-icon::before {
+#skills .top-heading::before {
   content: "\f121";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 10px;
 }
 
-.contact-icon::before {
+#works .top-heading::before {
+  content: "\e51d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+}
+
+#contact .top-heading::before {
   content: "\f0e0";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 10px;
+}
+
+#contact .top-heading {
+  text-shadow: none;
 }
 
 /* 
@@ -89,11 +121,6 @@ profile
   display: flex;
   flex-flow: column;
   align-items: center;
-}
-
-#profile h1 {
-  text-align: center;
-  width: 100%;
 }
 
 #profile #name {
@@ -118,7 +145,7 @@ profile
   padding: 5px;
 }
 
-.img-hoge img {
+.icon img {
   width: 100px;
 }
 
@@ -129,21 +156,23 @@ skills
   margin-top: 3%;
 }
 
-#skills h1 {
-  text-align: center;
-  width: 100%;
-}
-
 #skills #skills-item {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: space-between;
+  width: 1000px;
   margin: 0 auto;
 }
 
 #skills-item article {
   width: 30%;
   margin-top: 3%;
+
+  text-align: center;
+}
+
+.skill-desc {
+  text-align: left;
 }
 
 /* 
@@ -160,6 +189,16 @@ works
 #works h1 {
   width: 100%;
   text-align: center;
+}
+
+#works article {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#works p {
+  text-align: left;
 }
 
 /* 

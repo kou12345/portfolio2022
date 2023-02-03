@@ -20,14 +20,14 @@
             <!-- menu -->
             <ul id="menu">
                 <li>
-                    <a href="#profile" class="user-icon change-color">Profile</a>
+                    <a href="#profile" class="top-heading change-color">Profile</a>
                 </li>
                 <li>
                     <a href="#skills" class="skills-icon change-color">Skills</a>
                 </li>
-                <li>
-                    <a href="#works" class="change-color">Works</a>
-                </li>
+                <!-- <li>
+                    <a href="#works" class="works-icon change-color">Works</a>
+                </li> -->
                 <li>
                     <a href="#contact" class="contact-icon change-color">Contact</a>
                 </li>
@@ -37,126 +37,140 @@
         <!-- profile -->
         <section id="profile">
 
-            <h1 class="user-icon">Profile</h1>
+            <h1 class="top-heading">Profile</h1>
 
 
             <!-- 概要 -->
             <p id="overview">
-                はじめまして、平幸一郎と申します<br>
-                主にPython, Djangoを使っています<br>
-                最近はGoを勉強しています
+                はじめまして、平幸一郎と申します
+                <a href="https://github.com/kou12345" target="_blank" rel="noopener noreferrer">
+                    (GitHub@kou12345)</a><br>
+                最近はGoとDB設計を勉強しています<br>
+                DB設計をしている中でドメイン知識の重要さを感じる事が多かったです
             </p>
 
             <br>
-            <!-- <h3>よく使う技術・ソフトウェア</h3>
-            <ul>
-                <li class="img-hoge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
-                </li>
-                <li class="img-hoge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
-                </li>
-                <li class="img-hoge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" />
-                </li>
-                <li class="img-hoge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                </li>
-                <li class="img-hoge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-                </li>
-                <li class="img-hoge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" />
-                </li>
-                <li class="img-hoge">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-                </li>
-            </ul> -->
+
         </section>
+
+        <hr>
 
         <!-- skills -->
         <section id="skills">
 
-            <h1 class="skills-icon">Skills</h1>
+            <h1 class="top-heading">Skills</h1>
 
             <div id="skills-item">
 
                 <article>
-                    <div class="img-hoge">
+                    <div class="icon">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
                     </div>
                     <h2>Python</h2>
                     <p>★★☆☆☆</p>
-                    <p>Webアプリのバックエンドで使っています</p>
+                    <p class="skill-desc">
+                        Webアプリのバックエンドで使っています<br>
+                    </p>
                 </article>
 
                 <article>
+                    <div class="icon">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
+                    </div>
                     <h2>Django</h2>
                     <p>★★☆☆☆</p>
-                    <p>説明</p>
+                    <p class="skill-desc">
+                        MigrationやORMが凄い便利で好きです<br>
+                    </p>
                 </article>
 
                 <article>
+                    <div class="icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" />
+                    </div>
                     <h2>Go</h2>
                     <p>★☆☆☆☆</p>
-                    <p>説明</p>
-                </article>
-
-                <article>
-                    <h2>DB設計</h2>
-                    <p>★☆☆☆☆</p>
-                    <p>
-                        まだまだ未熟です<br>
-                        A5M2を使って、ER図を書いてます
+                    <p class="skill-desc">
+                        最近勉強を始めました<br>
+                        初めて触る静的型付け言語<br>
                     </p>
                 </article>
 
                 <article>
-                    <h2>Docker</h2>
+                    <div class="icon">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                    </div>
+                    <h2>DB</h2>
                     <p>★★☆☆☆</p>
-                    <p>
-                        開発環境を用意する際によく使ってます<br>
+                    <p class="skill-desc">
+                        まだまだ未熟です<br>
+                        主にA5:SQL Mk-2を使ってます<br>
+                        DDLの生成やエンティティ定義書を自動生成してくれるので便利です
                     </p>
                 </article>
 
                 <article>
+                    <div class="icon">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" />
+                    </div>
+                    <h2>Docker</h2>
+                    <p>★★★☆☆</p>
+                    <p class="skill-desc">
+                        開発環境を用意する際によく使ってます<br>
+                        何度でもやり直しができて、便利
+
+                    </p>
+                </article>
+
+                <article>
+                    <div class="icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                    </div>
                     <h2>GitHub</h2>
                     <p>★★★☆☆</p>
-                    <p>基本的な事はできます（add, commit, push）</p>
+                    <p class="skill-desc">基本的な事はできます<br>（add, commit, push）</p>
                 </article>
             </div>
 
         </section>
 
+        <br>
+        <hr>
+
         <!-- works -->
         <section id="works">
 
-            <h1>Works</h1>
+            <h1 class="top-heading">Works</h1>
+            <br>
 
             <article>
-                <h2>title</h2>
-                <p>説明</p>
-                <a href="#">詳細へ</a>
+                <h2>GitHub Universe 2022まとめ</h2>
+                <p>
+                    授業で制作したサイトです<br>
+                    GitHub Universe 2022の内容を簡単にまとめました
+                </p>
+                <a href="lp-4features-main\index.html" target="_blank" rel="noopener noreferrer">詳細へ</a>
             </article>
+            <hr>
+            <br>
 
             <article>
-                <h2>title</h2>
-                <p>説明</p>
-                <a href="#">詳細へ</a>
+                <h2>サイドバーとアニメーション</h2>
+                <p>授業で制作したサイトです</p>
+                <a href="fixed-sidebar-main\index.html" target="_blank" rel="noopener noreferrer">詳細へ</a>
             </article>
-
-            <article>
-                <h2>title</h2>
-                <p>説明</p>
-                <a href="#">詳細へ</a>
-            </article>
+            <hr>
+            <br>
 
         </section>
 
         <!-- contact -->
         <section id="contact">
 
-            <h1 class="contact-icon">Contact</h1>
+            <h1 class="top-heading">Contact</h1>
 
             <!-- email -->
             <p id="email">hi.0412.ko.2002@gmail.com</p>
